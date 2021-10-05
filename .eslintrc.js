@@ -16,5 +16,7 @@ module.exports = {
     'no-undef': 'off',
     'no-unused-vars': ['error', { argsIgnorePattern: 'event' }],
     'import/extensions': 'off',
+    'no-return-assign': 'off',
+    'no-unused-expressions': 'off',
   },
 };
