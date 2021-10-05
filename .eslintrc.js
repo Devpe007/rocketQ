@@ -18,5 +18,7 @@ module.exports = {
     'import/extensions': 'off',
     'no-return-assign': 'off',
     'no-unused-expressions': 'off',
+    'class-methods-use-this': 'off',
+    camelcase: 'off',
   },
 };
