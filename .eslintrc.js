@@ -12,5 +12,9 @@ module.exports = {
   },
   rules: {
     'no-console': 'off',
+    'no-extra-semi': 'off',
+    'no-undef': 'off',
+    'no-unused-vars': ['error', { argsIgnorePattern: 'event' }],
+    'import/extensions': 'off',
   },
 };
