@@ -1,0 +1,8 @@
+{
+  "name": "02-JornadaDiscovery",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/Devpe007/jornada-discovery.git",
+  "author": "Devpe007 <anddev007pe@gmailcom>",
+  "license": "MIT"
+}
