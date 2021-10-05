@@ -6,7 +6,8 @@
   "author": "Devpe007 <anddev007pe@gmailcom>",
   "license": "MIT",
   "scripts": {
-    "dev": "nodemon ."
+    "dev": "nodemon .",
+    "init-db": "node src/database/init.js"
   },
   "dependencies": {
     "ejs": "^3.1.6",
