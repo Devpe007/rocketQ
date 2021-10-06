@@ -49,6 +49,12 @@ class RoomController {
 
     response.render('room', { room_id, questions, questionsRead });
   };
+
+  enter(request, response) {
+    const { roomId } = request.body;
+
+    response.redirect(`/room/${roomId}`);
+  };
 };
 
 module.exports = new RoomController();

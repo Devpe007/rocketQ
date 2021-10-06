@@ -9,6 +9,7 @@ routes.get('/', (request, response) => response.render('home', { page: 'enter-ro
 
 routes.get('/room/:room_id', RoomController.open);
 routes.post('/create-room', RoomController.create);
+routes.post('/enter-room', RoomController.enter);
 
 routes.post('/question/:room_id/:question_id/:action', QuestionController.index);
 routes.post('/question/create/:room_id', QuestionController.create);
