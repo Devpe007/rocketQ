@@ -37,7 +37,13 @@ class RoomController {
     await db.close();
 
     response.redirect(`/room/${roomId}`);
-  }
+  };
+
+  open(request, response) {
+    const { room_id } = request.params;
+
+    response.render('room', { room_id });
+  };
 };
 
 module.exports = new RoomController();
