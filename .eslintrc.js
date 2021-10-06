@@ -23,5 +23,7 @@ module.exports = {
     'no-plusplus': 'off',
     'no-const-assign': 'off',
     radix: 'off',
+    'no-loop-func': 'off',
+    'no-await-in-loop': 'off',
   },
 };
