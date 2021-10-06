@@ -15,9 +15,10 @@ class QuestionController {
       } else if (action === 'check') {
         await db.run(`UPDATE questions SET read = 1 WHERE id = ${question_id}`);
       };
+      response.redirect(`/room/${room_id}`);
+    } else {
+      response.render('pass-incorrect', { room_id });
     };
-
-    response.redirect(`/room/${room_id}`);
   };
 
   async create(request, response) {
