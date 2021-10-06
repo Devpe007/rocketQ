@@ -20,5 +20,8 @@ module.exports = {
     'no-unused-expressions': 'off',
     'class-methods-use-this': 'off',
     camelcase: 'off',
+    'no-plusplus': 'off',
+    'no-const-assign': 'off',
+    radix: 'off',
   },
 };
