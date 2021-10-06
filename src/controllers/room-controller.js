@@ -39,10 +39,15 @@ class RoomController {
     response.redirect(`/room/${roomId}`);
   };
 
-  open(request, response) {
+  async open(request, response) {
+    const db = await Database();
+
     const { room_id } = request.params;
 
-    response.render('room', { room_id });
+    const questions = await db.all(`SELECT * FROM questions WHERE room = ${room_id} and read = 0`);
+    const questionsRead = await db.all(`SELECT * FROM questions WHERE room = ${room_id} and read = 1`);
+
+    response.render('room', { room_id, questions, questionsRead });
   };
 };
 
