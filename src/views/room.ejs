@@ -78,11 +78,11 @@
                                 </div>
                             </div>
                             <div class="actions">
-                                <a href="#" class="check" data-id="2">
+                                <a href="#" class="check" data-id="<%= question.id %>">
                                     <img src="/images/check.svg" alt="Marcar como lida">
                                     Marcar como lida
                                 </a>
-                                <a href="#" class="delete" data-id="2">
+                                <a href="#" class="delete" data-id="<%= question.id %>">
                                     <img src="/images/trash.svg" alt="Excluir">
                                     Excluir
                                 </a>
@@ -100,7 +100,7 @@
                                     <p> <%= questionRead.title %>  </p>
                                 </div>
                             </div>
-                            <div class="actions" data-id="1">
+                            <div class="actions" data-id="<%= questionRead.id %> ">
                                 <a href="#" class="delete">
                                     <img src="/images/trash.svg" alt="Excluir">
                                     Excluir
